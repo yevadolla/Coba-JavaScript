@@ -7,5 +7,6 @@ function jumlahDuaBilangan(a, b){
     return total;
 }
 alert(jumlahDuaBilangan(1,2));
-alert(jumlahDuaBilangan(25,30));
-alert(jumlahDuaBilangan(1500,17.5));
+function myFunction(){
+    document.getElementById("demo4").innerHTML = "Paragraph changed.";
+}
