@@ -8,6 +8,23 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <p id ="demo"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3">Tekan tombol dibawah ini untuk menyembunyikan tulisan!</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'"> Click Me!
+    </button>
+    <script>
+        document.write('coba javascript')
+        text = "Nama : "
+        text += " Yohana Evadolla"
+
+        text1 = "Program Studi : "
+        text1 += "Informatika"
+
+        document.getElementById("demo").innerHTML = text;
+        document.getElementById("demo2").innerHTML = text1;
+
+    </script>
 
 <script src="latihanJavaScript.js"></script>
 </body>
