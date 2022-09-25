@@ -7,16 +7,18 @@ function jumlahDuaBilangan(a, b){
     return total;
 }
 alert(jumlahDuaBilangan(1,2));
+
 function myFunction(){
     document.getElementById("demo4").innerHTML = "Paragraph changed.";
 }
-var a = 8;
-var b = 3;
-var volumA, volumB, total;
 
-volumA = a*a*a;
-volumB = b*b*b;
+//refaktori sederhana/mengsederhanakan perintah
+//function jmlVolumDuaKubus(a, b){
+//    return a*a*a + b*b*b;
+//}
+//alert(jmlVolumDuaKubus(8, 3));
 
-total = volumA + volumB;
-
-console.log(total);
+//variabel scope
+function tes(){
+    
+}
