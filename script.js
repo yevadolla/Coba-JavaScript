@@ -63,38 +63,85 @@
 
 //DOM Manipulation
 //buat elemen baru
-const pBaru = document.createElement('p');
-const teksPBaru = document.createTextNode('Paragraf Baru');
-//simpan tulisan ke paragraf
-pBaru.appendChild(teksPBaru);
-//simpan PBaru diakhir section A
-const sectionA = document.getElementById('a');
-sectionA.appendChild(pBaru);
+// const pBaru = document.createElement('p');
+// const teksPBaru = document.createTextNode('Paragraf Baru');
+// //simpan tulisan ke paragraf
+// pBaru.appendChild(teksPBaru);
+// //simpan PBaru diakhir section A
+// const sectionA = document.getElementById('a');
+// sectionA.appendChild(pBaru);
 
-const liBaru = document.createElement('li');
-const teksLiBaru = document.createTextNode('Item Baru');
-liBaru.appendChild(teksLiBaru);
-const ul = document.querySelector('section#b ul');
-const li2 = ul.querySelector('section#b ul li:nth-child(2)')
+// const liBaru = document.createElement('li');
+// const teksLiBaru = document.createTextNode('Item Baru');
+// liBaru.appendChild(teksLiBaru);
+// const ul = document.querySelector('section#b ul');
+// const li2 = ul.querySelector('section#b ul li:nth-child(2)')
 
-ul.insertBefore(liBaru, li2);
+// ul.insertBefore(liBaru, li2);
 
-//remove
-const link = document.getElementsByTagName('a')[0];
-sectionA.removeChild(link);
+// //remove
+// const link = document.getElementsByTagName('a')[0];
+// sectionA.removeChild(link);
 
-//replace
-const SectionB = document.getElementById('b');
-const p4 = SectionB.querySelector('p');
+// //replace
+// const SectionB = document.getElementById('b');
+// const p4 = SectionB.querySelector('p');
 
-const h2Baru = document.createElement('h2');
-const teksBaru = document.createTextNode('Judul Baru ahe');
-h2Baru.appendChild(teksBaru);
-SectionB.replaceChild(h2Baru, p4);
+// const h2Baru = document.createElement('h2');
+// const teksBaru = document.createTextNode('Judul Baru ahe');
+// h2Baru.appendChild(teksBaru);
+// SectionB.replaceChild(h2Baru, p4);
 
-pBaru.style.backgroundColor = 'lightgreen';
-liBaru.style.backgroundColor = 'lightgreen';
-h2Baru.style.backgroundColor = 'lightgreen';
+// pBaru.style.backgroundColor = 'lightgreen';
+// liBaru.style.backgroundColor = 'lightgreen';
+// h2Baru.style.backgroundColor = 'lightgreen';
 
 
 
+// //events
+// const p3 = document.querySelector('.p3');
+
+// function ubahWrnP2(){
+//     p2.style.backgroundColor = 'pink';
+// }
+
+// const p2 = document.querySelector('.p2');
+// p2.onclick = ubahWrnP2;
+
+// function ubahWrnP3(){
+//     p3.style.backgroundColor = 'salmon';
+// }
+
+// //addEventsListener
+// const p4 = document.querySelector('section#b p');
+// p4.addEventListener('click', function() {
+//     p4.style.backgroundColor = 'salmon';
+//     const ul = document.querySelector('section#b ul');
+//     const liBaru = document.createElement('li');
+//     const teksLiBaru = document.createTextNode('item baru ehe');
+//     liBaru.appendChild(teksLiBaru);
+//     ul.appendChild(liBaru);
+// });
+
+//eventsHandler
+const p3 = document.querySelector('.p3');
+// p3.onclick = function(){
+//     p3.style.background = 'blue';
+// }
+// p3.onclick = function(){
+//     p3.style.color = 'red';
+// }
+
+//eventsListener
+// p3.addEventListener('click', function(){
+//     p3.style.backgroundColor = 'salmon';
+// });
+// p3.addEventListener('click', function(){
+//     p3.style.color = 'blue';
+// });
+p3.addEventListener('mouseenter', function(){
+    p3.style.backgroundColor = 'salmon';
+});
+p3.addEventListener('mouseleave', function(){
+    p3.style.backgroundColor = 'pink';
+});
