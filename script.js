@@ -50,17 +50,51 @@
 // const sectionA = document.querySelector('section#a');
 // sectionA.innerHTML = '<div>paragraffff 1 <p>hahaha</p> </div>   <div>paragraf 2</div>';
 
-const judul = document.querySelector('#judul');
-judul.style.color = 'lightblue';
-judul.style.backgroundColor = 'salmon';
+// const judul = document.querySelector('#judul');
+// judul.style.color = 'lightblue';
+// judul.style.backgroundColor = 'salmon';
 
-const judul1 = document.getElementsByTagName('h1')[0];
-judul1.setAttribute('name', 'salalii');
+// const judul1 = document.getElementsByTagName('h1')[0];
+// judul1.setAttribute('name', 'salalii');
 
-const a = document.querySelector('a');
+// const a = document.querySelector('a');
 
-const p2 = document.querySelector('.p2');
+// const p2 = document.querySelector('.p2');
 
+//DOM Manipulation
+//buat elemen baru
+const pBaru = document.createElement('p');
+const teksPBaru = document.createTextNode('Paragraf Baru');
+//simpan tulisan ke paragraf
+pBaru.appendChild(teksPBaru);
+//simpan PBaru diakhir section A
+const sectionA = document.getElementById('a');
+sectionA.appendChild(pBaru);
+
+const liBaru = document.createElement('li');
+const teksLiBaru = document.createTextNode('Item Baru');
+liBaru.appendChild(teksLiBaru);
+const ul = document.querySelector('section#b ul');
+const li2 = ul.querySelector('section#b ul li:nth-child(2)')
+
+ul.insertBefore(liBaru, li2);
+
+//remove
+const link = document.getElementsByTagName('a')[0];
+sectionA.removeChild(link);
+
+//replace
+const SectionB = document.getElementById('b');
+const p4 = SectionB.querySelector('p');
+
+const h2Baru = document.createElement('h2');
+const teksBaru = document.createTextNode('Judul Baru ahe');
+h2Baru.appendChild(teksBaru);
+SectionB.replaceChild(h2Baru, p4);
+
+pBaru.style.backgroundColor = 'lightgreen';
+liBaru.style.backgroundColor = 'lightgreen';
+h2Baru.style.backgroundColor = 'lightgreen';
 
 
 
